@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>options</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="../_css/Wel_Scr_Stylesheet.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="../_js/script.js"></script>
+</head>
+
+<body>
+<div class="body">
+
+<header>
+	<img src="../_images/WP_Logo.jpg" width="292" height="100" alt="WinPoint Logo" longdesc="http://www.winpointlc.com/" class="hed_img">
+    <h1 style="vertical-align: middle; text-align: center;">Customer Revenue Tracker</h1>
+</header>
+
+<div class="left_pillar_scr_3" id="home">
+<div class="spl">
+<input id="button_create" name="Create" type="button" value="CREATE" onclick="myFunction()">
+<input id="button_read" name="Read" type="button" value="READ">
+<input id="button_update" name="Update" type="button" value="UPDATE">
+<input id="button_delete" name="Delete" type="button" value="DELETE">
+<!-- <input id="button_logout" name="Logout" type="button" value="LOGOUT"> -->
+</div>
+</div>
+
+<aside class="right_pillar_scr_3_opt">
+
+<div id="div0">
+<h1 style="color: white; text-align: center;"> Please make your choice </h1>
+</div>
+
+<div id="div1" class="div1">
+	<h2 style="text-align: center; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">Create a new Customer</h2>
+	<form action="" method="post" name="Entry Form" class="form_create">
+		<div class="mar_set">
+        <dl>
+  		<dt id="list">Customer ID</dt>
+        <dt id="list_with_mar"><input name="cst_name" type="number" size="40" id="customer_id"><dt>
+        <dt id="list">Name</dt>
+        <dt id="list_with_mar"><input name="Name" type="text" size="38" maxlength="40" id="customer_name"><dt>
+        <dt id="list">Total Amount</dt>
+        <dt id="list_with_mar"><input name="Total amt." type="number" size="40"><dt>
+        <dt id="list">Amount Paid</dt>
+        <dt id="list_with_mar"><input name="Amt.Paid" type="number" size="40"><dt>
+        <dt id="list">Amount Balance</dt>
+        <dt id="list_with_mar"><input name="Amt.Balance" type="number" size="40"><dt>
+        <dt id="list">Due Date</dt>
+        <dt id="list_with_mar"><input name="Date" type="date" size="40"><dt>
+		<dl>
+        <input name="Submit" type="submit" value="Submit" id="create_button">
+        <input name="Reset" type="reset" value="Reset">
+        </div>
+    </form>
+</div>
+
+<div id="div2">
+
+<table class="read_table" id="read_table">
+    <tr>
+      <th>Customer Name</th>
+      <th>Customer Id</th>
+      <th>Total Amount</th>
+      <th>Amount Paid</th>
+      <th>Amount Balance</th>
+      <th>Due Date</th>
+    </tr>
+
+</table>
+ </div>
+
+<div id="div3">
+	<p style="text-align:center; color:white;"> Enter the Customer ID which you want to Update</p>
+	<dt id="list_with_mar" style="text-align:center"><input name="cust_ID_update" type="number" size="40" id="cust_ID_update"><dt>
+	<div class="div_button"><input name="Submit" type="submit" id="up_button"></div>
+</div>
+
+<div id="div4">
+	<p style="text-align:center; color:white;"> Enter the Customer ID which you want to Delete</p>
+	<dt id="list_with_mar" style="text-align:center"><input name="cust_ID_update" type="number" size="40" id="cust_ID_delete"><dt>
+	<div class=div_button><input name="submit" type="submit" id="delete_button"></div>
+</div>
+
+<div id="div5">
+<h2 style="text-align: center; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">Edit the Customer Data</h2>
+<form action="" name="Update Form" class="form_create">
+		<div class="mar_set">
+        <dl>
+  		<dt id="list">Customer ID</dt>
+        <dt id="list_with_mar"><input name="cst_name" type="number" size="40" id="customer_id1"><dt>
+        <dt id="list">Name</dt>
+        <dt id="list_with_mar"><input name="Name" type="text" size="38" maxlength="40" id="customer_name1"><dt>
+        <dt id="list">Total Amount</dt>
+        <dt id="list_with_mar"><input name="Total amt." type="number" size="40"><dt>
+        <dt id="list">Amount Paid</dt>
+        <dt id="list_with_mar"><input name="Amt.Paid" type="number" size="40"><dt>
+        <dt id="list">Amount Balance</dt>
+        <dt id="list_with_mar"><input name="Amt.Balance" type="number" size="40"><dt>
+        <dt id="list">Due Date</dt>
+        <dt id="list_with_mar"><input name="Date" type="date" size="40"><dt>
+		<dl>
+        <input name="Submit" type="submit" value="Update" id="update_button">
+        <input name="Reset" type="reset" value="Reset">
+        </div>
+
+</div>
+
+</aside>
+
+</div>
+</body>
+</html>
